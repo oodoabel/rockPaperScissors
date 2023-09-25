@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgb(6, 6, 53);
+        background-image: image-set(url(/icons/Game\ Match\ Peak\ Matchup\ Material\ Background\ Wallpaper\ Image\ For\ Free\ Download\ -\ Pngtree.jpg));
+        backdrop-filter: blur(5px);
+      }
+      .rock{
+        display: flex;
+        margin-right: 20px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 140px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        font-weight: bolder;
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-width: 0px;
+        box-shadow: 5px 5px rgba(76, 69, 0, 0.5);
+        z-index: 1;
+        background-color: rgb(176, 189, 189);
+      }
+      .heading{
+        color: white;
+        font-weight: bolder;
+        font-size: 50px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+      }
+      .btns{
+        display: flex;
+        background-color: ;
+      }
+      .scoreBoard{
+        color: orange;
+        padding-left: 45px;
+        font-size: 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+      }
+      i{
+        font-size: 30px;
+        padding: 5px 5px;
+        color: rgb(0, 0, 0);
+        margin-right: 20px;
+        background-color: mintcream;
+      }
+      .imageOfRock{
+        aspect-ratio: 1;
+        width: 100px;
+        display: flex;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.6;
+      }
+      .alldiv{
+      }
+      .score{
+        color: rgb(255, 255, 255);
+        padding: 0px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        text-decoration: underline;
+      }
+      .Rule{
+        color: white;
+        padding-left: 185px;
+
+      }
+      .rule1{
+        color: rgb(255, 166, 0);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="alldiv">
+      <p class="heading">Rock Paper Scissors</p> 
+      <div class="new">
+        <div class="btns">
+
+          <button class="rock"
+          onclick="
+            const randomNumber = Math.random();
+            let computerMove = '';
+            let result ='';
+  
+            if (randomNumber >= 0 && randomNumber < 1/3) {
+              computerMove = 'Rock';
+            } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+              computerMove = 'Paper';
+            } else if (randomNumber >= 2/3 && randomNumber <= 1) {
+              computerMove = 'Scissors';
+            }
+  
+            if (computerMove === 'Rock') {
+              result = 'Tie.'
+            } else if (computerMove === 'Paper') {
+              result = 'You win.'
+            } else if (computerMove === 'Scissors') {
+              result = 'You lose.'
+            }
+            alert(`Your Move: Rock\nComputer Move: ${computerMove}\n${result}`)
+          "
+          >
+            Rock
+            <img class="imageOfRock" src="/icons/rock.png" >
+          </button>
+  
+          <button class="rock"
+          onclick="
+          {const randomNumber = Math.random();
+            let computerMove = '';
+            let result ='';
+            if (randomNumber >= 0 && randomNumber < 1/3) {
+              computerMove = 'Rock';
+            } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+              computerMove = 'Paper';
+            } else if (randomNumber >= 2/3 && randomNumber <= 1) {
+              computerMove = 'Scissors';
+            }
+  
+            if (computerMove === 'Rock') {
+              result = 'You win.'
+            } else if (computerMove === 'Paper') {
+              result = 'Tie.'
+            } else if (computerMove === 'Scissors') {
+              result = 'You lose.'
+            }
+            alert(`Your Move: Paper\nComputer Move: ${computerMove}\n${result}`)}
+          ">
+            Paper
+            <img class="imageOfRock" src="/icons/paper.png" >
+          </button>
+  
+          <button class="rock"
+            onclick=" {
+              const randomNumber = Math.random();
+            let computerMove = '';
+            let result ='';
+  
+            if (randomNumber >= 0 && randomNumber < 1/3) {
+              computerMove = 'Rock';
+            } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+              computerMove = 'Paper';
+            } else if (randomNumber >= 2/3 && randomNumber <= 1) {
+              computerMove = 'Scissors';
+            }
+  
+            if (computerMove === 'Rock') {
+              result = 'You lose.'
+            } else if (computerMove === 'Paper') {
+              result = 'You win.'
+            } else if (computerMove === 'Scissors') {
+              result = 'tie.'
+            }
+            alert(`Your Move: Scissors\nComputer Move: ${computerMove}\n${result}`)
+            }
+            
+          "
+          >
+            Scissors
+            <img class="imageOfRock" src="/icons/scissors.png" >
+          </button>    
+  
+        </div>
+        <div>
+        <p class="score">Scoreboard</p>
+        <p class="scoreBoard">Computer <i>10</i>   You <i>04</i></p>
+        <p class="Rule"><strong class="rule1">Rules of the Game</strong> <br>Rock beats Scissors <br>Scissors beats Paper <br>Paper beats Rock</p>
+        </div>
+        
+      </div>
+      
+    </div>
+
+
+    
+
+    <script>
+      
+    </script>
+
+  </body>
+</html>
